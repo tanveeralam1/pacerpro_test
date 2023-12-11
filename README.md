@@ -25,10 +25,12 @@ rails db:create
 rails db:migrate
 rails db:migrate RAILS_ENV=test # For test database
 
-Running the Application
-To start the server:
+**Running the Application
+To start the server:**
 
 rails server
+
+
 Access the application at http://localhost:3000.
 
 Running Tests
