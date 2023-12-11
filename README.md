@@ -39,9 +39,13 @@ To execute the test suite:
 **rails test**
 
 You can first implement and then delete to check:
+
 # Using Rails Console
+
 item = Item.create(name: 'Example Item')
+
 item.soft_delete   # Soft deletes the item
+
 item.restore       # Restores the soft-deleted item
 
 
@@ -51,8 +55,11 @@ This Rails model (Item) includes soft delete functionality to mark records as "d
 
 
 Soft Delete Functionality:
+
 soft_delete: Marks an item as deleted by updating the deleted_at attribute with the current timestamp.
+
 restore: Restores a soft-deleted item by setting the deleted_at attribute to nil.
+
 Default Scope: Excludes "deleted" items from normal queries.
 
 
